@@ -19,6 +19,10 @@ axios.get('https://lambda-times-api.herokuapp.com/topics')
             const tab = document.createElement('div');
             tab.classList.add('tab')
             tab.textContent = element;
+
+            tab.addEventListener('click', () => {
+                console.log(element)
+            })
             topics.appendChild(tab)
 
         });
